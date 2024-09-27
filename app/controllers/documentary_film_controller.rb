@@ -12,10 +12,8 @@ class DocumentaryFilmController < ApplicationController
   def create
     @documentary_film = DocumentaryFilm.new(posts_params)
     if @documentary_film.save
-      p "Guardado"
       redirect_to documentary_film_index_path
     else
-      p "No Guardado"
       render :new
     end
   end
@@ -23,7 +21,6 @@ class DocumentaryFilmController < ApplicationController
   private
   # Definicion de parametros a recibir
   def posts_params
-    p "solicitando"
     params.require(:documentary_film).permit(:name, :synopsis, :director)
   end
 end
