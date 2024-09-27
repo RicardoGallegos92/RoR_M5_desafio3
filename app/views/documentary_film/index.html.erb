@@ -1,0 +1,24 @@
+<h1>DocumentaryFilm#index</h1>
+<p>Find Waldo</p>
+<hr>
+<table>
+	<thead>
+		<tr>
+			<th>ID</th>
+			<th>Nombre</th>
+			<th>Director</th>
+			<th>Sinopsis</th>
+		</tr>
+	</thead>
+	<tbody>
+	<% @df_all.each do |docFilm| %>
+		<tr>
+			<td><%= docFilm.id %></td>
+			<td><%= docFilm.name %></td>
+			<td><%= docFilm.synopsis %></td>
+			<td><%= docFilm.director %></td>
+		</tr>
+	<% end %>
+	</tbody>
+	<hr>
+</table>

@@ -1,0 +1,27 @@
+<h1>DocumentaryFilm#new</h1>
+<p>Find me in app/views/documentary_film/new.html.erb</p>
+<h1>Formulario Aki</h1>
+
+<%= form_with model: @documentary_film, url: '/documentary_film', local: true do |form| %>
+    <div>
+        <%= form.label :name, "Nombre Documental" %>
+        <br>
+        <%= form.text_field :name %>
+    </div>
+    <hr>
+    <div>
+        <%= form.label :synopsis, "Sinopsis" %>
+        <br>
+        <%= form.text_field :synopsis %>
+    </div>
+    <hr>
+    <div>
+        <%= form.label :director, "Director" %>
+        <br>
+        <%= form.text_field :director %>
+    </div>
+    <hr>
+    <div>
+    <%= form.submit %>
+    </div>
+<% end %>
