@@ -1,17 +1,14 @@
 Rails.application.routes.draw do
-  get "documentary_film/index", to: "documentary_film#index"
+  get "documentary_film", "documentary_film/index", to: "documentary_film#index"
   get "documentary_film/new", to: "documentary_film#new"
-  get "documentary_film", to: "documentary_film#index"
   post "documentary_film", to: "documentary_film#create"
 
-  get "serie/index", to: "serie#index"
+  get "serie", "serie/index", to: "serie#index"
   get "serie/new", to: "serie#new"
-  get "serie", to: "serie#index"
   post "serie", to: "serie#create"
 
-  get "movie/index", to: "movie#index"
+  get "movie", "movie/index", to: "movie#index"
   get "movie/new", to: "movie#new"
-  get "movie", to: "movie#index"
   post "movie", to: "movie#create"
 
 
@@ -26,5 +23,5 @@ Rails.application.routes.draw do
   get "manifest" => "rails/pwa#manifest", as: :pwa_manifest
 
   # Defines the root path route ("/")
-  root "documentary_film#new"
+  root "documentary_film#index"
 end

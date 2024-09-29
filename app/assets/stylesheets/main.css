@@ -1,0 +1,57 @@
+body{
+	margin: 0;
+	padding: 2vw 2vh;
+}
+
+body *{
+	text-align: center;
+}
+
+ul, li, a{
+	color: black;
+	list-style-type: none;
+	text-decoration: none;
+	border: 2px transparent solid;
+	padding: 5px;
+}
+
+.lista{
+	
+}
+
+.lista *{
+	display: none;
+	position: relative;
+}
+
+.lista:hover *{
+	display: block;
+}
+
+a:hover{
+	color: Blue;
+	/* text-decoration: overline underline; */
+	border-color: blue;
+}
+
+header>nav{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+nav>ul{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+}
+
+table, table *{
+	margin: 0 auto;
+	border: 2px solid black;
+	padding: 2px;
+}
+
+thead, tr:nth-child(even){
+	background-color: rgb(195, 195, 195);
+}
