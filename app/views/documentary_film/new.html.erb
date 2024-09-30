@@ -8,18 +8,18 @@
     </div>
     <hr>
     <div>
-        <%= form.label :synopsis, "Sinopsis" %>
-        <br>
-        <%= form.text_field :synopsis %>
-    </div>
-    <hr>
-    <div>
         <%= form.label :director, "Director" %>
         <br>
         <%= form.text_field :director %>
     </div>
     <hr>
     <div>
-    <%= form.submit %>
+        <%= form.label :synopsis, "Sinopsis" %>
+        <br>
+        <%= form.text_area :synopsis %>
+    </div>
+    <hr>
+    <div>
+        <%= form.submit %>
     </div>
 <% end %>
