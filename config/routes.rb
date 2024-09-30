@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get "index", to: "documentary_film#index"
   get "documentary_film", "documentary_film/index", to: "documentary_film#index"
   get "documentary_film/new", to: "documentary_film#new"
   post "documentary_film", to: "documentary_film#create"
